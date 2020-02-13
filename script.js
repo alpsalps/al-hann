@@ -191,7 +191,7 @@ var Clock = (function() {
 "Hannie Babe",
 "Happy Valentine's",
 "Love U ❤",
-"Lucky to have u",
+"So lucky to have u❤",
 "Always, Al"],
         
         text = texts[0],
@@ -205,7 +205,7 @@ var Clock = (function() {
     var FRAME_RATE = 60, 
         MIN_WIDTH = 0, 
         MIN_HEIGHT = 0, 
-        PARTICLE_NUM = 8000, 
+        PARTICLE_NUM = 2048, 
         RADIUS = Math.PI * 2; 
 
     var defaultStyles = function() {
