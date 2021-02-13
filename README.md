@@ -4,6 +4,6 @@ al&amp;hann's adventures
 
 ## Second Valentine's: Gaming with al
 
-Tips:win extra fuel through accessing windpower
+Tips: win extra fuel through accessing windpower
 
 Cheating Code: type the name of your lover!
