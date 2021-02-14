@@ -1,19 +1,18 @@
-// Game data
-	let gameStarted; // Boolean
+
+	let gameStarted; 
 
 	let balloonX;
 	let balloonY;
 
-	let verticalVelocity; // Current vertical velocity of the balloon
-	let horizontalVelocity; // Current horizontal velocity of the balloon
+	let verticalVelocity; 
+	let horizontalVelocity; 
 
-	let fuel; // Percentage of fuel left
-	let heating; // Boolean: Is the mouse down or not?
+	let fuel; 
+	let heating; 
+	let trees; 
+	let backgroundTrees; 
 
-	let trees; // Metadata of the trees in an array
-	let backgroundTrees; // Metadata of the trees on the hills in the background
-
-	// Configuration
+	// kPara
 	const mainAreaWidth = 400;
 	const mainAreaHeight = 375;
 	let horizontalPadding = (window.innerWidth - mainAreaWidth) / 2;
@@ -161,7 +160,7 @@
 	});
 
 	window.addEventListener("keydown", function (event) {
-	  if (event.key == " ") {
+	  if (event.key == "~") {
 		event.preventDefault();
 		resetGame();
 		return;
@@ -169,7 +168,7 @@
 	});
 
 	window.addEventListener("keydown", function (event) {
-	  if (event.key == " ")
+	  if (event.key == "~")
 	  return;
 	  heating = true;
 
