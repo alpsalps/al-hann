@@ -197,18 +197,20 @@
 	function animate() {
 	  xxx = xxx + 0.25
 	  m = m + 0.25
+		
 	  if(m > canvas.width) {
 		m = 0
 	  }
-	  if(m >= 100)
+	  const score = Math.floor(balloonX / 50);
+	  if(score >= 66)
 	  {
 		  horizontalVelocity = 6
 	  }
-	  if(m >= 350)
+	  if(score >= 166)
 	  {
 		  horizontalVelocity = 9.5
 	  }
-	  if(m >= 600)
+	  if(score >= 266)
 	  {	  
 		horizontalVelocity = 15
 	  }
