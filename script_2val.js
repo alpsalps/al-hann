@@ -377,7 +377,7 @@
 	  // Score
 	  const score = Math.floor(balloonX / 50);
 	  ctx.fillStyle = "	#FFB6C1";
-	  ctx.font = "bold 30px serif";
+	  ctx.font = "bold 30px sans-serif";
 	  ctx.textAlign = "end";
 	  ctx.textBaseline = "top";
 	  ctx.fillText(`Al&Hann's kisses to be: ${score}`, window.innerWidth - 30, 30);
