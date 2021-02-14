@@ -160,7 +160,7 @@
 	});
 
 	window.addEventListener("keydown", function (event) {
-	  if (event.key == "~") {
+	  if (event.key == "r") {
 		event.preventDefault();
 		resetGame();
 		return;
@@ -168,7 +168,7 @@
 	});
 
 	window.addEventListener("keydown", function (event) {
-	  if (event.key == "~")
+	  if (event.key == "r")
 	  return;
 	  heating = true;
 
