@@ -467,13 +467,13 @@
 
 	  const treeTrunkHeight = 5;
 	  const treeTrunkWidth = 2;
-	  const treeCrownHeight = 25;
+	  const treeCrownHeight = 35;
 	  const treeCrownWidth = 10;
 
 	//draw
 		yi = 50
 		er = 335
-		bi = 2
+		bi = 1.7
 		//zhuzi
 		ctx.beginPath();
 		ctx.moveTo(0, 0)
@@ -530,18 +530,18 @@
 	  const cartBottomLeft = { x: balloonX - 30, y: balloonY };
 	  const cartBottomRight = { x: balloonX + 30, y: balloonY };
 	  const cartTopRight = { x: balloonX + 30, y: balloonY - 40 };
-
+	  kH = 35;
 	  for (const { x, color } of backgroundTrees) {
 		const treeBottomLeft = { x : (-balloonX * hill1Speed + x) * hill1Stretch,
-		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - 20 };
+		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - kH };
 		const treeLeft = { x : (-balloonX * hill1Speed + x) * hill1Stretch,
-		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - 20 };
+		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - kH };
 		const treeTopLeft = { x : (-balloonX * hill1Speed + x) * hill1Stretch,
-		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - 20 };
+		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - kH };
 		const treeTop = { x : (-balloonX * hill1Speed + x) * hill1Stretch,
-		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - 20 };
+		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - kH };
 		const treeTopRight = { x : (-balloonX * hill1Speed + x) * hill1Stretch,
-		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - 20 };
+		y: getTreeY(x, hill1BaseHeight, hill1Amplitude) - kH };
 		
 		
 		
