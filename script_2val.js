@@ -4,7 +4,7 @@
 	let balloonX;
 	let balloonY;
 
-	let verticalVelocity; 
+	let vertical; 
 	let horizontalVelocity; 
 
 	let fuel; 
@@ -54,7 +54,7 @@
 	  gameStarted = false;
 	  heating = false;
 	  verticalVelocity = 5;
-	  horizontalVelocity = 5;
+	  horizontalVelocity = 4.5;
 	  balloonX = 0;
 	  balloonY = 0;
 	  fuel = 100;
@@ -200,7 +200,18 @@
 	  if(m > canvas.width) {
 		m = 0
 	  }
-	  
+	  if(m >= 100)
+	  {
+		  horizontalVelocity = 6
+	  }
+	  if(m >= 350)
+	  {
+		  horizontalVelocity = 9.5
+	  }
+	  if(m >= 600)
+	  {	  
+		horizontalVelocity = 15
+	  }
 	  if (!gameStarted) return;
 
 	  const velocityChangeWhileHeating = 0.4;
